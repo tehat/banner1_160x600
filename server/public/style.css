@@ -1,0 +1,204 @@
+/**
+ * 160x600 - An HTML banner
+ * @version v0.0.0
+ * @date 1-25-2016 at 9:8:19
+ */
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    text-rendering: optimizeLegibility
+}
+
+body, body * {
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font: 100%/1.5 Arial, sans-serif
+}
+
+#container_ad {
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    margin: auto
+}
+
+#content_ad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #fff
+}
+
+.content-ad:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FD9E08;
+    z-index: 1000
+}
+
+#background_exit_ad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400
+}
+
+.colorOverlay {
+    position: absolute;
+    background-color: #158FC9;
+    opacity: 0.7;
+    top: 1200px;
+    left: -640px;
+    width: 600%;
+    height: 200%;
+    z-index: 2;
+    transform: rotate(50deg)
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 92px;
+    left: 0;
+    z-index: 1
+}
+
+.headline-text {
+    position: relative;
+    z-index: 3;
+    opacity: 0
+}
+
+.main-headline {
+    position: relative;
+    transform: translateY(348px);
+    left: 15px;
+    text-transform: uppercase;
+    width: 330px
+}
+
+.sub-headline {
+    transform: translateY(320px);
+    left: 15px;
+    width: 415px
+}
+
+.bottom-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    background: #E9F2F7
+}
+
+.headline-text img {
+    height: auto
+}
+
+.pulse {
+    height: 4px;
+    width: 30px;
+    transform: translateX(-30px);
+    bottom: 0;
+    position: absolute;
+    background: -moz-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #e7a61a 30%, #e7a61a 70%, rgba(231, 166, 26, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #e7a61a 30%, #e7a61a 70%, rgba(231, 166, 26, 0) 100%);
+    background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, #e7a61a 30%, #e7a61a 70%, rgba(231, 166, 26, 0) 100%)
+}
+
+.lightbulb-container {
+    float: left;
+    margin: 28px 0 0 11px;
+    background-image: url("lightbulb-outline.svg");
+    background-size: cover;
+    width: 23px;
+    height: 34px
+}
+
+.flame {
+    margin: 7px 0 0 6px
+}
+
+.aspirity-logo {
+    width: 110px;
+    height: auto;
+    margin: 34px 0 0 4px;
+    image-rendering: auto;
+    float: left
+}
+
+.learn-more-button {
+    background-color: #FD9E08;
+    padding: 5px 20px 4px;
+    border-radius: 2px;
+    margin: 12px 15px 0 0;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 3px 2px 0px transparent;
+    -moz-box-shadow: 0px 3px 2px 0px transparent;
+    box-shadow: 0px 3px 2px 0px transparent;
+    transition: box-shadow .3s
+}
+
+.learn-more-button img {
+    position: relative;
+    z-index: 10
+}
+
+.learn-more-button:before {
+    content: "";
+    width: 100%;
+    height: 400%;
+    position: absolute;
+    left: -100%;
+    top: -370%;
+    background-color: #fdda14;
+    transition: all .3s;
+    transform: rotate(-55deg)
+}
+
+body:hover .learn-more-button:before {
+    top: -50px;
+    left: 0
+}
+
+body:hover .learn-more-button {
+    -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2)
+}
+
+:focus {
+    outline: none
+}
+
+::-moz-focus-inner {
+    border: 0
+}

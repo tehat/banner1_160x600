@@ -1,0 +1,20 @@
+{
+  "name": "banner1_160x600",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "pg": "^4.5.1",
+    "path": "^0.12.7",
+    "node": "^0.0.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "tehat",
+  "license": "ISC"
+}

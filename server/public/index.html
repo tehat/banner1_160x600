@@ -1,0 +1,112 @@
+<!--
+ 160x600 - An HTML banner
+ @version v0.0.0
+ @date 1-25-2016 at 9:7:11
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Aspirity</title>
+    <meta name="ad.size" content="width=160,height=600">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style type="text/css">#container_ad {
+        z-index: 20;
+        visibility: hidden
+    }
+    button {
+        background: 0 0;
+        outline: 0;
+        border: 0
+    }
+    </style>
+
+    <noscript>
+        <style type="text/css">body {
+            margin: 0
+        }
+
+        #container_ad {
+            display: none
+        }
+        </style>
+    </noscript>
+
+    <script type="text/javascript">var clickTag = "http://example.com";</script>
+    <script language="javascript">
+        function _politeLoad(e, t) {
+            var a, n = e.length, d = 0, c = function () {
+                ++d === n && t && t()
+            };
+            for (a = 0; n > a; a++)_loadScript(e[a], c)
+        }
+        function _loadScript(e, t) {
+            var a = document.createElement("script");
+            a.type = "text/javascript", a.readyState ? a.onreadystatechange = function () {
+                ("loaded" == a.readyState || "complete" == a.readyState) && (a.onreadystatechange = null,
+                    t())
+            } : a.onload = function () {
+                t()
+                },
+                    a.src = e, document.getElementsByTagName("head")[0].appendChild(a)
+        }
+    function pageLoadedHandler() {
+        _politeLoad(["https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js", "script.js"],
+        function () {
+            bannerInit()
+        });
+        var e = document.createElement("link");
+            e.setAttribute("rel", "stylesheet"),
+            e.setAttribute("type", "text/css"),
+            e.setAttribute("href", "style.css"),
+                    document.getElementsByTagName("head")[0].appendChild(e),
+                    document.getElementById("container_ad").style.opacity = 1,
+                    document.getElementById("container_ad").style.display = "block"
+    }
+    </script>
+</head>
+<body onload="pageLoadedHandler();">
+    <div id="container_ad">
+        <div id="content_ad" class="content-ad">
+
+            <div id="mainHeadline" class="headline-text main-headline">
+                <img src="headline.svg" alt="Your variable rate electricity plan is bad news">
+            </div>
+
+            <div id="subHeadline" class="headline-text sub-headline">
+                <img src="subhead.svg" alt="Get the facts and the good news."></div>
+            <div id="bottomBanner" class="bottom-banner">
+
+                <div id="pulse" class="pulse"></div>
+                <div class="lightbulb-container">
+                    <img src="flame.svg" class="flame" id="flame">
+                </div>
+                <img src="aspirity_logo.svg" alt="Asprity Power + More" class="aspirity-logo"></div>
+            <button class="learn-more-button"><img src="learnmore.svg" alt="Learn More"></button>
+            <div id="colorOverlay" class="colorOverlay"></div>
+            <div id="backgroundImage" class="backgroundImage">
+                <img src="photo.jpg" alt="Dispel Myths">
+            </div>
+        </div>
+        <button id="background_exit_ad"></button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("background_exit_ad").onclick = function () {
+            window.open(window.clickTag)
+        };
+    </script>
+    <!--[if lt IE 10 ]>
+    <style type="text/css">
+        #container_ad {
+            display: none !important;
+    }</style>
+        <a href="http://www.example.com/" target="_blank">
+            <img src="backupimage.jpg" width="160" height="600">
+        </a>
+    <![endif]-->
+    <noscript>
+        <a href="http://www.example.com/" target="_blank">
+            <img src="backupimage.jpg" width="160" height="600">
+        </a>
+</noscript>
+</body>
+</html>
