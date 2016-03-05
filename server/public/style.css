@@ -67,7 +67,7 @@ body, body * {
 .colorOverlay {
     position: absolute;
     background-color: #158FC9;
-    opacity: 0.7;
+    opacity: 0.9;
     top: 1200px;
     left: -640px;
     width: 600%;
@@ -179,7 +179,7 @@ body, body * {
     position: absolute;
     left: -100%;
     top: -370%;
-    background-color: #fdda14;
+    background-color: #0D5A7E;
     transition: all .3s;
     transform: rotate(-55deg)
 }
